@@ -1,0 +1,157 @@
+{
+    "start": "6 Ottobre 2015",
+    "end": "30 Gennaio 2016",
+
+    "tags": [
+        "lab",
+        "lezione",
+        "esercitazione"
+    ],
+
+    "slots": [{
+        "day": "Mar",
+        "from": {
+            "hour": 13,
+            "minute": 15
+        },
+        "to": {
+            "hour": 16,
+            "minute": 15
+        },
+        "room": "L15",
+        "tag": "esercitazione"
+    }, {
+        "day": "Ven",
+        "from": {
+            "hour": 8,
+            "minute": 15
+        },
+        "to": {
+            "hour": 11,
+            "minute": 15
+        },
+        "room": "L01",
+        "tag": "lezione"
+    }],
+    "modify": [{
+            "from": "27 Ottobre 2015 13:15",
+            "to": "27 Ottobre 2015 16:15",
+            "new": {
+                "from": "27 Ottobre 2015 14:15",
+                "to": "27 Ottobre 2015 16:15"
+            }
+        }, {
+            "from": "3 Novembre 2015 13:15",
+            "to": "3 Novembre 2015 16:15",
+            "new": {
+                "from": "3 Novembre 2015 14:15",
+                "to": "3 Novembre 2015 16:15"
+            }
+        }, {
+            "from": "15 Dicembre 2015 13:15",
+            "to": "15 Dicembre 2015 16:15",
+            "new": {
+                "from": "15 Dicembre 2015 14:15",
+                "to": "15 Dicembre 2015 16:15"
+            }
+        }
+
+    ],
+
+    "skip": [{
+        "from": "20 Novembre 2015",
+        "to": "29 Novembre 2015"
+    }, {
+        "from": "5 Dicembre 2015",
+        "to": "8 Dicembre 2015"
+    }, {
+        "from": "24 Dicembre 2015",
+        "to": "6 Gennaio 2016"
+    }],
+
+    "fixedSlots": [{
+        "date": "27 Ottobre 2015",
+        "from": {
+            "hour": 12,
+            "minute": 15
+        },
+        "to": {
+            "hour": 14,
+            "minute": 15
+        },
+        "room": "B6.27",
+        "tag": "lab"
+    }, {
+        "date": "3 Novembre 2015",
+        "from": {
+            "hour": 10,
+            "minute": 15
+        },
+        "to": {
+            "hour": 14,
+            "minute": 15
+        },
+        "room": "B6.27",
+        "tag": "lab"
+    }, {
+        "date": "17 Novembre 2015",
+        "from": {
+            "hour": 10,
+            "minute": 15
+        },
+        "to": {
+            "hour": 13,
+            "minute": 15
+        },
+        "room": "B6.28",
+        "tag": "lab"
+    }, {
+        "date": "15 Dicembre 2015",
+        "from": {
+            "hour": 12,
+            "minute": 15
+        },
+        "to": {
+            "hour": 14,
+            "minute": 15
+        },
+        "room": "B6.27",
+        "tag": "lab"
+    }, {
+        "date": "22 Dicembre 2015",
+        "from": {
+            "hour": 10,
+            "minute": 15
+        },
+        "to": {
+            "hour": 12,
+            "minute": 15
+        },
+        "room": "B6.27",
+        "tag": "lab"
+    }, {
+        "date": "12 Gennaio 2016",
+        "from": {
+            "hour": 10,
+            "minute": 15
+        },
+        "to": {
+            "hour": 12,
+            "minute": 15
+        },
+        "room": "B6.28",
+        "tag": "lab"
+    }, {
+        "date": "26 Gennaio 2016",
+        "from": {
+            "hour": 10,
+            "minute": 15
+        },
+        "to": {
+            "hour": 13,
+            "minute": 15
+        },
+        "room": "B6.28",
+        "tag": "lab"
+    }]
+}

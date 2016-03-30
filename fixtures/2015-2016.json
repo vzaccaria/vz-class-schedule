@@ -1,0 +1,213 @@
+{
+    "title": "Informatica B",
+    "calendar": "ZaccariaInfoB1516",
+    "start": "6 Ottobre 2015",
+    "end": "30 Gennaio 2016",
+
+    "tags": [
+        "lec",
+        "lab",
+        "M",
+        "J",
+        "Al",
+        "Va",
+        "Co",
+        "Bo",
+        "Fe",
+        "Ap",
+        "SqC",
+        "SqD"
+
+    ],
+
+    "slots": [{
+        "day": "Mar",
+        "from": {
+            "hour": 13,
+            "minute": 15
+        },
+        "to": {
+            "hour": 16,
+            "minute": 15
+        },
+        "tag": "lec",
+        "room": "L15",
+        "address": "Via La Masa, 34 - 20156 - Milano (MI)"
+    }, {
+        "day": "Ven",
+        "from": {
+            "hour": 8,
+            "minute": 15
+        },
+        "to": {
+            "hour": 11,
+            "minute": 15
+        },
+        "tag": "lec",
+        "room": "L01",
+        "address": "Via La Masa, 34 - 20156 - Milano (MI)"
+    }],
+    "modify": [{
+        "from": "27 Ottobre 2015 13:15",
+        "to": "27 Ottobre 2015 16:15",
+        "new": {
+            "from": "27 Ottobre 2015 14:15",
+            "to": "27 Ottobre 2015 16:15"
+        }
+    }, {
+        "from": "3 Novembre 2015 13:15",
+        "to": "3 Novembre 2015 16:15",
+        "new": {
+            "from": "3 Novembre 2015 14:15",
+            "to": "3 Novembre 2015 16:15"
+        }
+    }, {
+        "from": "15 Dicembre 2015 13:15",
+        "to": "15 Dicembre 2015 16:15",
+        "new": {
+            "from": "15 Dicembre 2015 14:15",
+            "to": "15 Dicembre 2015 16:15"
+        }
+    }, {
+        "from": "6 Novembre 2015 08:15",
+        "to": "6 Novembre 2015 11:15",
+        "new": {
+            "from": "6 Novembre 2015 08:15",
+            "to": "6 Novembre 2015 10:15"
+        }
+    }, {
+        "from": "23 Ottobre 2015 08:15",
+        "to": "23 Ottobre 2015 11:15",
+        "new": {
+            "from": "23 Ottobre 2015 08:15",
+            "to": "23 Ottobre 2015 10:15"
+        }
+    }],
+
+    "skip": [{
+        "from": "12 Ottobre 2015",
+        "to": "14 Ottobre 2015",
+        "cause": "malattia"
+    }, {
+        "from": "20 Novembre 2015",
+        "to": "29 Novembre 2015",
+        "cause": "sospensione compiti"
+    }, {
+        "from": "5 Dicembre 2015",
+        "to": "8 Dicembre 2015",
+        "cause": "ponte immacolata"
+    }, {
+        "from": "24 Dicembre 2015",
+        "to": "6 Gennaio 2016",
+        "cause": "vacanze di Natale"
+    }, {
+        "from": "13 Novembre 2015",
+        "to": "13 Novembre 2015",
+        "cause": "commissione decaduti"
+    }, {
+        "from": "18 Dicembre 2015",
+        "to": "18 Dicembre 2015",
+        "cause": "commissione di laurea"
+    }],
+
+    "fixedSlots": [{
+        "date": "27 Ottobre 2015",
+        "from": {
+            "hour": 12,
+            "minute": 15
+        },
+        "to": {
+            "hour": 14,
+            "minute": 15
+        },
+        "room": "B6.27",
+        "tag": "lab,M,Al,Va,Co,SqC",
+        "address": "Via Durando, 10 - 20158 - Milano (MI)"
+    }, {
+        "date": "3 Novembre 2015",
+        "from": {
+            "hour": 10,
+            "minute": 15
+        },
+        "to": {
+            "hour": 14,
+            "minute": 15
+        },
+        "room": "B6.27",
+        "tag": "lab,M,J,Al,Va,Co,SqC",
+        "address": "Via Durando, 10 - 20158 - Milano (MI)"
+
+    }, {
+        "date": "17 Novembre 2015",
+        "from": {
+            "hour": 10,
+            "minute": 15
+        },
+        "to": {
+            "hour": 13,
+            "minute": 15
+        },
+        "room": "B6.28",
+        "tag": "lab,M,J,Fe,SqD",
+        "address": "Via Durando, 10 - 20158 - Milano (MI)",
+        "note": "Bozzolin e Apruzzese non presenti; Bozzolin ha poi recuperato alla prova in itinere."
+    }, {
+        "date": "15 Dicembre 2015",
+        "from": {
+            "hour": 12,
+            "minute": 15
+        },
+        "to": {
+            "hour": 14,
+            "minute": 15
+        },
+        "room": "B6.27",
+        "tag": "lab,M,J,Al,Co,SqC",
+        "address": "Via Durando, 10 - 20158 - Milano (MI)",
+        "note": "Valenti non presente giustificato. Da recuperare."
+
+    }, {
+        "date": "22 Dicembre 2015",
+        "from": {
+            "hour": 10,
+            "minute": 15
+        },
+        "to": {
+            "hour": 12,
+            "minute": 15
+        },
+        "room": "B6.27",
+        "tag": "lab,M,J,Al,Va,Co,SqC",
+        "address": "Via Durando, 10 - 20158 - Milano (MI)"
+
+    }, {
+        "date": "12 Gennaio 2016",
+        "from": {
+            "hour": 10,
+            "minute": 15
+        },
+        "to": {
+            "hour": 12,
+            "minute": 15
+        },
+        "room": "B6.28",
+        "tag": "lab,M,Fe,SqD",
+        "address": "Via Durando, 10 - 20158 - Milano (MI)",
+        "note": "Bozzolin non presente, non penso recuperera'. Apruzzese non si e' presentato."
+
+    }, {
+        "date": "26 Gennaio 2016",
+        "from": {
+            "hour": 10,
+            "minute": 15
+        },
+        "to": {
+            "hour": 13,
+            "minute": 15
+        },
+        "room": "B6.28",
+        "tag": "lab,M,J,Bo,Fe,Ap,SqD",
+        "address": "Via Durando, 10 - 20158 - Milano (MI)",
+        "note": "Andrea Continella si e' presentato ma non doveva, ma non si sa chi e'!"
+    }]
+}

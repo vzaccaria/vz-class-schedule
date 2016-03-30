@@ -1,0 +1,49 @@
+TODO VZ -*- mode: org -*-
+
+#+STARTUP: content
+#+STARTUP: hidestars
+#+STARTUP: logdone
+
+#+TAGS: LEZIONE(l) ESERCIZI(e)
+
+#+PROPERTY: DURATA_ALL 15 30 45 60
+#+COLUMNS: %40ITEM %10TAGS %7DURATA
+
+* Pippo
+  :PROPERTIES:
+  :DURATA:   30
+  :END:
+** Pluto                                                            :LEZIONE:
+   :PROPERTIES:
+   :DURATA:   15
+   :END:
+   + Text 1
+   + Text 2
+   + [[pipp][text3]]
+** Pluto
+   :PROPERTIES:
+   :DURATA:   15
+   :END:
+
+   + Text 1
+     PROVAOIOIOEIOIEOIEOIEOEIOEIOEIOEIEOIEOEIEOIEOIEIOEIOEIOEI
+   + Text 2
+   + [[pipp][text3]]
+
+* Paperino
+  :PROPERTIES:
+  :DURATA:   30
+  :END:
+** Ciccio
+   :PROPERTIES:
+   :DURATA:   15
+   :END:
+   + Text 1
+   + Text 2
+   + [[pipp][text3]]
+** Cippa
+   :PROPERTIES:
+   :DURATA:   15
+   :END:
+** Lippa
+* Pit
