@@ -1,41 +1,42 @@
 {
-    "name": "autoprog",
-    "version": "0.0.1",
-    "description": "No name given yet",
-    "main": "index.js",
-    "bin": {
-        "autoprog": "./index.js"
-    },
-    "man": "./man/man1/autoprog.1",
-    "scripts": {
-        "test": "make test"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/vzaccaria/autoprog.git"
-    },
-    "author": "Vittorio Zaccaria",
-    "license": "BSD",
-    "bugs": {
-        "url": "https://github.com/vzaccaria/autoprog/issues"
-    },
-    "homepage": "https://github.com/vzaccaria/autoprog",
-    "dependencies": {
-        "easy-table": "1.0.0",
-        "flat": "1.6.1",
-        "moment": "2.11.1",
-        "sparkline": "0.1.2",
-        "xlsx": "0.8.0",
-        "zaccaria-cli": "0.2.0",
-        "diy-build": "1.0.8",
-        "babel": "4.7.16",
-        "shelljs": "0.5.3",
-        "xyz": "0.5.0",
-        "mocha": "2.4.5",
-        "chai": "3.5.0",
-        "chai-as-promised": "5.2.0",
-        "mustache": "2.1.3",
-        "stupid-replace": "0.0.3",
-        "git-hist": "0.0.5"
-    }
+  "name": "autoprog",
+  "version": "0.0.1",
+  "description": "No name given yet",
+  "main": "index.js",
+  "bin": {
+    "autoprog": "./index.js"
+  },
+  "man": "./man/man1/autoprog.1",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vzaccaria/autoprog.git"
+  },
+  "author": "Vittorio Zaccaria",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/vzaccaria/autoprog/issues"
+  },
+  "homepage": "https://github.com/vzaccaria/autoprog",
+  "dependencies": {
+    "babel": "4.7.16",
+    "chai": "3.5.0",
+    "chai-as-promised": "5.2.0",
+    "diy-build": "1.0.8",
+    "easy-table": "1.0.0",
+    "flat": "1.6.1",
+    "git-hist": "0.0.5",
+    "json2yaml": "1.0.3",
+    "mocha": "2.4.5",
+    "moment": "2.11.1",
+    "mustache": "2.1.3",
+    "shelljs": "0.5.3",
+    "sparkline": "0.1.2",
+    "stupid-replace": "0.0.3",
+    "xlsx": "0.8.0",
+    "xyz": "0.5.0",
+    "zaccaria-cli": "0.2.0"
+  }
 }

@@ -71,7 +71,7 @@ let main = () => {
                                     statistics: stats,
                                     notes: notes
                                 }
-                                console.log(JSON.stringify(all,0,4));
+                                console.log(JSON.stringify(all, 0, 4));
                             } else {
                                 console.log(et.print(sol))
                                 console.log(et.print(stats))

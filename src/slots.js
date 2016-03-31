@@ -218,4 +218,5 @@ function produceStats(prob, sol) {
     })
 }
 
+
 module.exports = { produceStats, produceSolution, produceNotes }
