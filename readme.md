@@ -47,4 +47,5 @@ Released under the BSD License.
 
 # Bug fixes
 
+-     usage file path -- [Mar 31st 16](../../commit/c51c59d6963fa2846558cd7ed0b5eb9df09305af)
 -     test timeout -- [Mar 31st 16](../../commit/b76a91708cb4f1453eecfa7c4e9e5f8e53d461f0)
