@@ -43,7 +43,7 @@ function produceGoogleCalEntry(it) {
 
 
 let main = () => {
-    $f.readLocal('docs/usage.md').then(it => {
+    $fs.readFileAsync(__dirname+'/docs/usage.md', 'utf8').then(it => {
         let {
             help, problem, schedule, googlecal, xlsx, json
         } = getOptions(it);

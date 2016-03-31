@@ -51,7 +51,7 @@ function produceGoogleCalEntry(it) {
 }
 
 var main = function () {
-    $f.readLocal("docs/usage.md").then(function (it) {
+    $fs.readFileAsync(__dirname + "/docs/usage.md", "utf8").then(function (it) {
         var _getOptions = getOptions(it);
 
         var help = _getOptions.help;
