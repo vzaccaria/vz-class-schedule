@@ -28,7 +28,6 @@ generateProject(_ => {
         })
         _.cmd("((echo '#!/usr/bin/env node') && cat ./lib/index.js) > index.js", "./lib/index.js")
         _.cmd("chmod +x ./index.js")
-        _.cmd("./index.js schedule ./fixtures/2015-2016.json -x")
     })
 
     _.collect("test", _ => {

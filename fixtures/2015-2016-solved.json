@@ -1,0 +1,478 @@
+{
+    "solutions": [
+        {
+            "giorno": "Martedì",
+            "data": "06 ottobre 2015",
+            "start": "13.15",
+            "end": "16.15",
+            "durata": "***",
+            "durNum": 3,
+            "aula": "L15",
+            "tag": "lec",
+            "gDate": "10/06/2015 13:15",
+            "gDuration": 180,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        },
+        {
+            "giorno": "Venerdì",
+            "data": "09 ottobre 2015",
+            "start": "08.15",
+            "end": "11.15",
+            "durata": "***",
+            "durNum": 3,
+            "aula": "L01",
+            "tag": "lec",
+            "gDate": "10/09/2015 08:15",
+            "gDuration": 180,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        },
+        {
+            "giorno": "Venerdì",
+            "data": "16 ottobre 2015",
+            "start": "08.15",
+            "end": "11.15",
+            "durata": "***",
+            "durNum": 3,
+            "aula": "L01",
+            "tag": "lec",
+            "gDate": "10/16/2015 08:15",
+            "gDuration": 180,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        },
+        {
+            "giorno": "Martedì",
+            "data": "20 ottobre 2015",
+            "start": "13.15",
+            "end": "16.15",
+            "durata": "***",
+            "durNum": 3,
+            "aula": "L15",
+            "tag": "lec",
+            "gDate": "10/20/2015 13:15",
+            "gDuration": 180,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        },
+        {
+            "giorno": "Venerdì",
+            "data": "23 ottobre 2015",
+            "start": "08.15",
+            "end": "10.15",
+            "durata": "**",
+            "durNum": 2,
+            "aula": "L01",
+            "tag": "lec",
+            "gDate": "10/23/2015 08:15",
+            "gDuration": 120,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        },
+        {
+            "giorno": "Martedì",
+            "data": "27 ottobre 2015",
+            "start": "12.15",
+            "end": "14.15",
+            "durata": "**",
+            "durNum": 2,
+            "aula": "B6.27",
+            "tag": "lab,M,Al,Va,Co,SqC",
+            "gDate": "10/27/2015 12:15",
+            "gDuration": 120,
+            "gAddress": "Via Durando, 10 - 20158 - Milano (MI)"
+        },
+        {
+            "giorno": "Martedì",
+            "data": "27 ottobre 2015",
+            "start": "14.15",
+            "end": "16.15",
+            "durata": "**",
+            "durNum": 2,
+            "aula": "L15",
+            "tag": "lec",
+            "gDate": "10/27/2015 14:15",
+            "gDuration": 120,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        },
+        {
+            "giorno": "Venerdì",
+            "data": "30 ottobre 2015",
+            "start": "08.15",
+            "end": "11.15",
+            "durata": "***",
+            "durNum": 3,
+            "aula": "L01",
+            "tag": "lec",
+            "gDate": "10/30/2015 08:15",
+            "gDuration": 180,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        },
+        {
+            "giorno": "Martedì",
+            "data": "03 novembre 2015",
+            "start": "10.15",
+            "end": "14.15",
+            "durata": "****",
+            "durNum": 4,
+            "aula": "B6.27",
+            "tag": "lab,M,J,Al,Va,Co,SqC",
+            "gDate": "11/03/2015 10:15",
+            "gDuration": 240,
+            "gAddress": "Via Durando, 10 - 20158 - Milano (MI)"
+        },
+        {
+            "giorno": "Martedì",
+            "data": "03 novembre 2015",
+            "start": "14.15",
+            "end": "16.15",
+            "durata": "**",
+            "durNum": 2,
+            "aula": "L15",
+            "tag": "lec",
+            "gDate": "11/03/2015 14:15",
+            "gDuration": 120,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        },
+        {
+            "giorno": "Venerdì",
+            "data": "06 novembre 2015",
+            "start": "08.15",
+            "end": "10.15",
+            "durata": "**",
+            "durNum": 2,
+            "aula": "L01",
+            "tag": "lec",
+            "gDate": "11/06/2015 08:15",
+            "gDuration": 120,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        },
+        {
+            "giorno": "Martedì",
+            "data": "10 novembre 2015",
+            "start": "13.15",
+            "end": "16.15",
+            "durata": "***",
+            "durNum": 3,
+            "aula": "L15",
+            "tag": "lec",
+            "gDate": "11/10/2015 13:15",
+            "gDuration": 180,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        },
+        {
+            "giorno": "Martedì",
+            "data": "17 novembre 2015",
+            "start": "10.15",
+            "end": "13.15",
+            "durata": "***",
+            "durNum": 3,
+            "aula": "B6.28",
+            "tag": "lab,M,J,Fe,SqD",
+            "gDate": "11/17/2015 10:15",
+            "gDuration": 180,
+            "gAddress": "Via Durando, 10 - 20158 - Milano (MI)"
+        },
+        {
+            "giorno": "Martedì",
+            "data": "17 novembre 2015",
+            "start": "13.15",
+            "end": "16.15",
+            "durata": "***",
+            "durNum": 3,
+            "aula": "L15",
+            "tag": "lec",
+            "gDate": "11/17/2015 13:15",
+            "gDuration": 180,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        },
+        {
+            "giorno": "Martedì",
+            "data": "01 dicembre 2015",
+            "start": "13.15",
+            "end": "16.15",
+            "durata": "***",
+            "durNum": 3,
+            "aula": "L15",
+            "tag": "lec",
+            "gDate": "12/01/2015 13:15",
+            "gDuration": 180,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        },
+        {
+            "giorno": "Venerdì",
+            "data": "04 dicembre 2015",
+            "start": "08.15",
+            "end": "11.15",
+            "durata": "***",
+            "durNum": 3,
+            "aula": "L01",
+            "tag": "lec",
+            "gDate": "12/04/2015 08:15",
+            "gDuration": 180,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        },
+        {
+            "giorno": "Venerdì",
+            "data": "11 dicembre 2015",
+            "start": "08.15",
+            "end": "11.15",
+            "durata": "***",
+            "durNum": 3,
+            "aula": "L01",
+            "tag": "lec",
+            "gDate": "12/11/2015 08:15",
+            "gDuration": 180,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        },
+        {
+            "giorno": "Martedì",
+            "data": "15 dicembre 2015",
+            "start": "12.15",
+            "end": "14.15",
+            "durata": "**",
+            "durNum": 2,
+            "aula": "B6.27",
+            "tag": "lab,M,J,Al,Co,SqC",
+            "gDate": "12/15/2015 12:15",
+            "gDuration": 120,
+            "gAddress": "Via Durando, 10 - 20158 - Milano (MI)"
+        },
+        {
+            "giorno": "Martedì",
+            "data": "15 dicembre 2015",
+            "start": "14.15",
+            "end": "16.15",
+            "durata": "**",
+            "durNum": 2,
+            "aula": "L15",
+            "tag": "lec",
+            "gDate": "12/15/2015 14:15",
+            "gDuration": 120,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        },
+        {
+            "giorno": "Martedì",
+            "data": "22 dicembre 2015",
+            "start": "10.15",
+            "end": "12.15",
+            "durata": "**",
+            "durNum": 2,
+            "aula": "B6.27",
+            "tag": "lab,M,J,Al,Va,Co,SqC",
+            "gDate": "12/22/2015 10:15",
+            "gDuration": 120,
+            "gAddress": "Via Durando, 10 - 20158 - Milano (MI)"
+        },
+        {
+            "giorno": "Martedì",
+            "data": "22 dicembre 2015",
+            "start": "13.15",
+            "end": "16.15",
+            "durata": "***",
+            "durNum": 3,
+            "aula": "L15",
+            "tag": "lec",
+            "gDate": "12/22/2015 13:15",
+            "gDuration": 180,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        },
+        {
+            "giorno": "Venerdì",
+            "data": "08 gennaio 2016",
+            "start": "08.15",
+            "end": "11.15",
+            "durata": "***",
+            "durNum": 3,
+            "aula": "L01",
+            "tag": "lec",
+            "gDate": "01/08/2016 08:15",
+            "gDuration": 180,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        },
+        {
+            "giorno": "Martedì",
+            "data": "12 gennaio 2016",
+            "start": "10.15",
+            "end": "12.15",
+            "durata": "**",
+            "durNum": 2,
+            "aula": "B6.28",
+            "tag": "lab,M,Fe,SqD",
+            "gDate": "01/12/2016 10:15",
+            "gDuration": 120,
+            "gAddress": "Via Durando, 10 - 20158 - Milano (MI)"
+        },
+        {
+            "giorno": "Martedì",
+            "data": "12 gennaio 2016",
+            "start": "13.15",
+            "end": "16.15",
+            "durata": "***",
+            "durNum": 3,
+            "aula": "L15",
+            "tag": "lec",
+            "gDate": "01/12/2016 13:15",
+            "gDuration": 180,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        },
+        {
+            "giorno": "Venerdì",
+            "data": "15 gennaio 2016",
+            "start": "08.15",
+            "end": "11.15",
+            "durata": "***",
+            "durNum": 3,
+            "aula": "L01",
+            "tag": "lec",
+            "gDate": "01/15/2016 08:15",
+            "gDuration": 180,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        },
+        {
+            "giorno": "Martedì",
+            "data": "19 gennaio 2016",
+            "start": "13.15",
+            "end": "16.15",
+            "durata": "***",
+            "durNum": 3,
+            "aula": "L15",
+            "tag": "lec",
+            "gDate": "01/19/2016 13:15",
+            "gDuration": 180,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        },
+        {
+            "giorno": "Venerdì",
+            "data": "22 gennaio 2016",
+            "start": "08.15",
+            "end": "11.15",
+            "durata": "***",
+            "durNum": 3,
+            "aula": "L01",
+            "tag": "lec",
+            "gDate": "01/22/2016 08:15",
+            "gDuration": 180,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        },
+        {
+            "giorno": "Martedì",
+            "data": "26 gennaio 2016",
+            "start": "10.15",
+            "end": "13.15",
+            "durata": "***",
+            "durNum": 3,
+            "aula": "B6.28",
+            "tag": "lab,M,J,Bo,Fe,Ap,SqD",
+            "gDate": "01/26/2016 10:15",
+            "gDuration": 180,
+            "gAddress": "Via Durando, 10 - 20158 - Milano (MI)"
+        },
+        {
+            "giorno": "Martedì",
+            "data": "26 gennaio 2016",
+            "start": "13.15",
+            "end": "16.15",
+            "durata": "***",
+            "durNum": 3,
+            "aula": "L15",
+            "tag": "lec",
+            "gDate": "01/26/2016 13:15",
+            "gDuration": 180,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        },
+        {
+            "giorno": "Venerdì",
+            "data": "29 gennaio 2016",
+            "start": "08.15",
+            "end": "11.15",
+            "durata": "***",
+            "durNum": 3,
+            "aula": "L01",
+            "tag": "lec",
+            "gDate": "01/29/2016 08:15",
+            "gDuration": 180,
+            "gAddress": "Via La Masa, 34 - 20156 - Milano (MI)"
+        }
+    ],
+    "statistics": [
+        {
+            "tag": "lec",
+            "total": 64
+        },
+        {
+            "tag": "lab",
+            "total": 18
+        },
+        {
+            "tag": "M",
+            "total": 18
+        },
+        {
+            "tag": "J",
+            "total": 14
+        },
+        {
+            "tag": "Al",
+            "total": 10
+        },
+        {
+            "tag": "Va",
+            "total": 8
+        },
+        {
+            "tag": "Co",
+            "total": 10
+        },
+        {
+            "tag": "Bo",
+            "total": 3
+        },
+        {
+            "tag": "Fe",
+            "total": 8
+        },
+        {
+            "tag": "Ap",
+            "total": 3
+        },
+        {
+            "tag": "SqC",
+            "total": 10
+        },
+        {
+            "tag": "SqD",
+            "total": 8
+        }
+    ],
+    "notes": [
+        {
+            "giorno": "17 11 2015",
+            "durata": "***",
+            "durNum": 3,
+            "aula": "B6.28",
+            "tag": "lab,M,J,Fe,SqD",
+            "note": "Bozzolin e Apruzzese non presenti; Bozzolin ha poi recuperato alla prova in itinere."
+        },
+        {
+            "giorno": "15 12 2015",
+            "durata": "**",
+            "durNum": 2,
+            "aula": "B6.27",
+            "tag": "lab,M,J,Al,Co,SqC",
+            "note": "Valenti non presente giustificato. Da recuperare."
+        },
+        {
+            "giorno": "12 01 2016",
+            "durata": "**",
+            "durNum": 2,
+            "aula": "B6.28",
+            "tag": "lab,M,Fe,SqD",
+            "note": "Bozzolin non presente, non penso recuperera'. Apruzzese non si e' presentato."
+        },
+        {
+            "giorno": "26 01 2016",
+            "durata": "***",
+            "durNum": 3,
+            "aula": "B6.28",
+            "tag": "lab,M,J,Bo,Fe,Ap,SqD",
+            "note": "Andrea Continella si e' presentato ma non doveva, ma non si sa chi e'!"
+        }
+    ]
+}

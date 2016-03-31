@@ -1,47 +1,51 @@
 /* eslint quotes: [0], strict: [0], callback-return: 2, no-use-before-define: 2 */
-var {
+let {
     $d, $o, $f, $fs, _, $b
 } = require('zaccaria-cli')
 
-var et = require('easy-table')
+let et = require('easy-table')
 
-var { produceExcel } = require('./lib/xlsx')
+let {
+    produceExcel
+} = require('./lib/xlsx')
 
-var {
+let {
     produceStats, produceSolution, produceNotes
 } = require('./lib/slots')
 
 
-var getOptions = doc => {
+let getOptions = doc => {
     "use strict"
-    var o = $d(doc)
-    var help = $o('-h', '--help', false, o)
-    var program = $o('-p', '--program', undefined, o)
-    var problem = o.PROBLEM
-    var schedule = o.schedule
-    var googlecal = $o('-g', '--googlecal', false, o)
-    var xlsx = $o('-x', '--xlsx', false, o)
+    let o = $d(doc)
+    let help = $o('-h', '--help', false, o)
+    let program = $o('-p', '--program', undefined, o)
+    let problem = o.PROBLEM
+    let schedule = o.schedule
+    let googlecal = $o('-g', '--googlecal', false, o)
+    let xlsx = $o('-x', '--xlsx', false, o)
+    let json = $o('-j', '--json', false, o)
+
     return {
-        help, problem, program, schedule, googlecal, xlsx
+        help, problem, program, schedule, googlecal, xlsx, json
     }
 }
 
 // gcalcli --calendar "ZaccariaInfoB1516" --title "Informatica B" --where "L01" --when "10/6/2015 13:15" --duration 120 --description 'xyz' --reminder 30 add --nocache
 
 function produceGoogleCalEntry(it) {
-    var dsc = "normale"
+    let dsc = "normale"
     if (_.contains(it.tag, 'lab')) {
         dsc = "laboratorio"
     }
-    var cli = `gcalcli --when "${it.gDate}" --calendar "${this.calendar}" --title "${this.title} in aula ${it.aula}" --where "${it.gAddress}" --duration ${it.gDuration} --description "${dsc}" --reminder "60" add --nocache`
+    let cli = `gcalcli --when "${it.gDate}" --calendar "${this.calendar}" --title "${this.title} in aula ${it.aula}" --where "${it.gAddress}" --duration ${it.gDuration} --description "${dsc}" --reminder "60" add --nocache`
     console.log(cli)
 }
 
 
-var main = () => {
+let main = () => {
     $f.readLocal('docs/usage.md').then(it => {
-        var {
-            help, problem, schedule, googlecal, xlsx
+        let {
+            help, problem, schedule, googlecal, xlsx, json
         } = getOptions(it);
         if (help) {
             console.log(it)
@@ -50,21 +54,29 @@ var main = () => {
                 $b.all([
                     $fs.readFileAsync(problem, 'utf8')
                 ]).then((res) => {
-                    var prob = res[0]
+                    let prob = res[0]
                     prob = JSON.parse(prob)
-                    var sol = produceSolution(prob)
-                    var stats = produceStats(prob, sol)
-                    var notes = produceNotes(prob)
-                    if (!googlecal && !xlsx) {
-                        console.log(et.print(sol))
-                        console.log(et.print(stats))
-                        console.log(et.print(notes))
+                    let sol = produceSolution(prob)
+                    let stats = produceStats(prob, sol)
+                    let notes = produceNotes(prob)
+                    if (googlecal) {
+                        _.map(sol, produceGoogleCalEntry, prob)
                     } else {
-                        if(googlecal) {
-                            _.map(sol, produceGoogleCalEntry, prob)
-                        }
-                        if(xlsx) {
+                        if (xlsx) {
                             produceExcel(sol, `${problem}.xlsx`, prob);
+                        } else {
+                            if (json) {
+                                let all = {
+                                    solutions: sol,
+                                    statistics: stats,
+                                    notes: notes
+                                }
+                                console.log(JSON.stringify(all,0,4));
+                            } else {
+                                console.log(et.print(sol))
+                                console.log(et.print(stats))
+                                console.log(et.print(notes))
+                            }
                         }
                     }
                 })

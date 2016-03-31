@@ -7,6 +7,7 @@ var should = chai.should()
 var z		= require('zaccaria-cli')
 var promise = z.$b
 var fs		= z.$fs
+let _ = z._
 
 /**
  * Promised version of shelljs exec
@@ -37,4 +38,20 @@ describe('#command', () => {
     var usage = fs.readFileSync(`${__dirname}/../docs/usage.md`, 'utf8')
     return exec(`${__dirname}/../index.js -h`).should.eventually.contain(usage)
   })
+})
+
+let jsonTest = [{
+    msg: "generate valid html",
+    cmd: "./index.js schedule ./fixtures/2015-2016.json -j",
+    file: './fixtures/2015-2016-solved.json'
+}]
+
+describe('#json', () => {
+    _.map(jsonTest, (j) => {
+        let q = j
+        it(`should ${q.msg} [ ${q.cmd} > ${q.file} ] `, () => {
+            let f = fs.readFileSync(q.file, 'utf8');
+            return exec(q.cmd).should.eventually.equal(f);
+        })
+    })
 })

@@ -32,8 +32,10 @@ var getOptions = function (doc) {
     var schedule = o.schedule;
     var googlecal = $o("-g", "--googlecal", false, o);
     var xlsx = $o("-x", "--xlsx", false, o);
+    var json = $o("-j", "--json", false, o);
+
     return {
-        help: help, problem: problem, program: program, schedule: schedule, googlecal: googlecal, xlsx: xlsx
+        help: help, problem: problem, program: program, schedule: schedule, googlecal: googlecal, xlsx: xlsx, json: json
     };
 };
 
@@ -57,6 +59,7 @@ var main = function () {
         var schedule = _getOptions.schedule;
         var googlecal = _getOptions.googlecal;
         var xlsx = _getOptions.xlsx;
+        var json = _getOptions.json;
 
         if (help) {
             console.log(it);
@@ -68,16 +71,24 @@ var main = function () {
                     var sol = produceSolution(prob);
                     var stats = produceStats(prob, sol);
                     var notes = produceNotes(prob);
-                    if (!googlecal && !xlsx) {
-                        console.log(et.print(sol));
-                        console.log(et.print(stats));
-                        console.log(et.print(notes));
+                    if (googlecal) {
+                        _.map(sol, produceGoogleCalEntry, prob);
                     } else {
-                        if (googlecal) {
-                            _.map(sol, produceGoogleCalEntry, prob);
-                        }
                         if (xlsx) {
                             produceExcel(sol, "" + problem + ".xlsx", prob);
+                        } else {
+                            if (json) {
+                                var all = {
+                                    solutions: sol,
+                                    statistics: stats,
+                                    notes: notes
+                                };
+                                console.log(JSON.stringify(all, 0, 4));
+                            } else {
+                                console.log(et.print(sol));
+                                console.log(et.print(stats));
+                                console.log(et.print(notes));
+                            }
                         }
                     }
                 });
