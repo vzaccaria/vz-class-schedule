@@ -6,7 +6,7 @@ let {
 let et = require('easy-table')
 
 let {
-    produceExcel
+    produceExcel, produceJsonForImport
 } = require('./lib/xlsx')
 
 let {
@@ -24,9 +24,10 @@ let getOptions = doc => {
     let googlecal = $o('-g', '--googlecal', false, o)
     let xlsx = $o('-x', '--xlsx', false, o)
     let json = $o('-j', '--json', false, o)
+    let imprt = $o('-i', '--import', false, o)
 
     return {
-        help, problem, program, schedule, googlecal, xlsx, json
+        help, problem, program, schedule, googlecal, xlsx, json, imprt
     }
 }
 
@@ -45,7 +46,7 @@ function produceGoogleCalEntry(it) {
 let main = () => {
     $fs.readFileAsync(__dirname+'/docs/usage.md', 'utf8').then(it => {
         let {
-            help, problem, schedule, googlecal, xlsx, json
+            help, problem, schedule, googlecal, xlsx, json, imprt
         } = getOptions(it);
         if (help) {
             console.log(it)
@@ -71,7 +72,11 @@ let main = () => {
                                     statistics: stats,
                                     notes: notes
                                 }
-                                console.log(JSON.stringify(all, 0, 4));
+                                if(!imprt) {
+                                    console.log(JSON.stringify(all, 0, 4));
+                                } else {
+                                    console.log(JSON.stringify(produceJsonForImport(sol, prob), 0, 4));
+                                }
                             } else {
                                 console.log(et.print(sol))
                                 console.log(et.print(stats))

@@ -91,10 +91,16 @@ function jsonToWorksheet(list, opts) {
 
 function docente(data) {
     var tags = data.tag.split(',')
-    if(_.includes(tags, 'lec')) {
-        return { docente: 'N', docente_ospite: 'Zaccaria' }
+    if (_.includes(tags, 'lec')) {
+        return {
+            docente: 'N',
+            docente_ospite: 'Zaccaria'
+        }
     } else {
-        return { docente: 'S', docente_ospite: 'Responsabili lab' }
+        return {
+            docente: 'S',
+            docente_ospite: 'Responsabili lab'
+        }
     }
 }
 
@@ -116,26 +122,38 @@ function prepareForExcel(data) {
     newData.n_ore_lez = data.durNum;
     newData.n_ore_lez_min = 0;
     newData = _.assign(newData, docente(data))
-    let tgs = _.groupBy(_.map(this.tags, (tag) => {
-        if(_.includes(tags, tag)) {
-            let value = data.durNum
-            return { tag, value }
-        } else {
-            let value = 0;
-            return { tag, value }
-        }
-    }), 'tag')
-    tgs = _.mapValues(tgs, (l) => {
-        return l[0].value
-    })
-    newData = _.assign(newData, tgs);
+    if (this.addTags) {
+        let tgs = _.groupBy(_.map(this.tags, (tag) => {
+            if (_.includes(tags, tag)) {
+                let value = data.durNum
+                return {
+                    tag, value
+                }
+            } else {
+                let value = 0;
+                return {
+                    tag, value
+                }
+            }
+        }), 'tag')
+        tgs = _.mapValues(tgs, (l) => {
+            return l[0].value
+        })
+        newData = _.assign(newData, tgs);
+    }
     newData.contenuto = "NA"
 
     return newData
 }
 
+function produceJsonForImport(data, prob) {
+    prob.addTags = false
+    return _.map(data, prepareForExcel, prob);
+}
+
 
 function produceExcel(data, name, prob) {
+    prob.addTags = true
     let wb = wbNew()
     wb.SheetNames = ['generated'];
     wb.Sheets['generated'] = jsonToWorksheet(_.map(data, prepareForExcel, prob));
@@ -143,5 +161,5 @@ function produceExcel(data, name, prob) {
 }
 
 module.exports = {
-    produceExcel
+    produceExcel, produceJsonForImport
 }

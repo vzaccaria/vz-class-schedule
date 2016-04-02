@@ -16,6 +16,7 @@ var et = require("easy-table");
 var _require2 = require("./lib/xlsx");
 
 var produceExcel = _require2.produceExcel;
+var produceJsonForImport = _require2.produceJsonForImport;
 
 var _require3 = require("./lib/slots");
 
@@ -33,9 +34,10 @@ var getOptions = function (doc) {
     var googlecal = $o("-g", "--googlecal", false, o);
     var xlsx = $o("-x", "--xlsx", false, o);
     var json = $o("-j", "--json", false, o);
+    var imprt = $o("-i", "--import", false, o);
 
     return {
-        help: help, problem: problem, program: program, schedule: schedule, googlecal: googlecal, xlsx: xlsx, json: json
+        help: help, problem: problem, program: program, schedule: schedule, googlecal: googlecal, xlsx: xlsx, json: json, imprt: imprt
     };
 };
 
@@ -60,6 +62,7 @@ var main = function () {
         var googlecal = _getOptions.googlecal;
         var xlsx = _getOptions.xlsx;
         var json = _getOptions.json;
+        var imprt = _getOptions.imprt;
 
         if (help) {
             console.log(it);
@@ -83,7 +86,11 @@ var main = function () {
                                     statistics: stats,
                                     notes: notes
                                 };
-                                console.log(JSON.stringify(all, 0, 4));
+                                if (!imprt) {
+                                    console.log(JSON.stringify(all, 0, 4));
+                                } else {
+                                    console.log(JSON.stringify(produceJsonForImport(sol, prob), 0, 4));
+                                }
                             } else {
                                 console.log(et.print(sol));
                                 console.log(et.print(stats));

@@ -32,6 +32,7 @@
         },
         "tag": "lec",
         "room": "L15",
+        "c_aula": "foo",
         "address": "Via La Masa, 34 - 20156 - Milano (MI)"
     }, {
         "day": "Ven",
@@ -45,6 +46,7 @@
         },
         "tag": "lec",
         "room": "L01",
+        "c_aula": "bar",
         "address": "Via La Masa, 34 - 20156 - Milano (MI)"
     }],
     "modify": [{
@@ -121,6 +123,7 @@
             "minute": 15
         },
         "room": "B6.27",
+        "c_aula": "cookoo",
         "tag": "lab,M,Al,Va,Co,SqC",
         "address": "Via Durando, 10 - 20158 - Milano (MI)"
     }, {
@@ -134,6 +137,7 @@
             "minute": 15
         },
         "room": "B6.27",
+        "c_aula": "ahahah",
         "tag": "lab,M,J,Al,Va,Co,SqC",
         "address": "Via Durando, 10 - 20158 - Milano (MI)"
 
@@ -148,6 +152,7 @@
             "minute": 15
         },
         "room": "B6.28",
+        "c_aula": "ahahah",
         "tag": "lab,M,J,Fe,SqD",
         "address": "Via Durando, 10 - 20158 - Milano (MI)",
         "note": "Bozzolin e Apruzzese non presenti; Bozzolin ha poi recuperato alla prova in itinere."
@@ -162,6 +167,7 @@
             "minute": 15
         },
         "room": "B6.27",
+        "c_aula": "ohohoh",
         "tag": "lab,M,J,Al,Co,SqC",
         "address": "Via Durando, 10 - 20158 - Milano (MI)",
         "note": "Valenti non presente giustificato. Da recuperare."
@@ -191,6 +197,7 @@
             "minute": 15
         },
         "room": "B6.28",
+        "c_aula": "eeeeee",
         "tag": "lab,M,Fe,SqD",
         "address": "Via Durando, 10 - 20158 - Milano (MI)",
         "note": "Bozzolin non presente, non penso recuperera'. Apruzzese non si e' presentato."

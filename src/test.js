@@ -48,6 +48,10 @@ let jsonTest = [{
     msg: "generate valid schedule",
     cmd: "./index.js schedule ./fixtures/2015-2016.json",
     file: './fixtures/2015-2016-solved.txt'
+}, {
+    msg: "generate valid schedule to import",
+    cmd: "./index.js schedule ./fixtures/2015-2016.json -j -i",
+    file: './fixtures/2015-2016-solved-import.json'
 }]
 
 describe('#json', () => {

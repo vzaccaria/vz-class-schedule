@@ -47,6 +47,7 @@ function addFixedSlots(prob, sol) {
                 from: $m(`${s.date} ${s.from.hour}:${s.from.minute}`, 'D MMMM YYYY HH:mm'),
                 to: $m(`${s.date} ${s.to.hour}:${s.to.minute}`, 'D MMMM YYYY HH:mm'),
                 room: s.room,
+                c_aula: s.c_aula,
                 tag: s.tag,
                 address: s.address,
                 note: s.note
@@ -64,7 +65,7 @@ function printNote(slot) {
         durNum: durnum,
         aula: slot.room,
         tag: slot.tag,
-        note: slot.note,
+        note: slot.note
     }
 }
 
@@ -81,6 +82,7 @@ function prepareForPrint(slot) {
         durata: dur,
         durNum: durnum,
         aula: slot.room,
+        c_aula: slot.c_aula,
         tag: slot.tag,
         gDate: slot.from.format("MM/DD/YYYY HH:mm"),
         gDuration: durnum * 60,
@@ -113,6 +115,7 @@ function createSlots(prob, sol) {
                     from: fm,
                     to: to,
                     room: weekslot.room,
+                    c_aula: weekslot.c_aula,
                     tag: weekslot.tag,
                     address: weekslot.address
                 })
