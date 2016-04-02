@@ -4,6 +4,7 @@ var {
 } = require('zaccaria-cli')
 
 var $m = require('moment')
+require('moment-range')
 var et = require('easy-table')
 var sp = require('sparkline')
 
@@ -70,7 +71,7 @@ function printNote(slot) {
 }
 
 
-function prepareForPrint(slot) {
+function prepareFinalSolution(slot) {
     var dur = slot.to.clone().diff(slot.from, 'hours')
     var durnum = dur
     dur = _.map((_.range(0, dur)), () => "*").join("")
@@ -83,6 +84,8 @@ function prepareForPrint(slot) {
         durNum: durnum,
         aula: slot.room,
         c_aula: slot.c_aula,
+        contenuto: slot.contenuto,
+        c_forma_didattica: slot.c_forma_didattica,
         tag: slot.tag,
         gDate: slot.from.format("MM/DD/YYYY HH:mm"),
         gDuration: durnum * 60,
@@ -166,6 +169,27 @@ function retouchSlots(prob, sol) {
     })
 }
 
+function addContent(sol, prob) {
+    sol = _.map(sol, (it) => {
+        let r = $m.range(it.from, it.to)
+        _.map(prob.content, (t, k) => {
+            let d = $m(k, 'D MMMM YYYY HH:mm')
+            if(r.contains(d)) {
+                it.contenuto = t.contenuto
+                if(t.type === 'lezione') {
+                    it.c_forma_didattica = 1
+                    it.tag = it.tag + ',lezione'
+                } else {
+                    it.c_forma_didattica = 13
+                    it.tag = it.tag + ',altro'
+                }
+            }
+        })
+        return it
+    })
+    return sol
+}
+
 function generateSolution(prob) {
     var sol = generateSlots(prob)
     sol = removeWeekends(sol)
@@ -177,12 +201,14 @@ function generateSolution(prob) {
         return it.from.valueOf()
     })
     sol = markOverlaps(sol)
+    sol = addContent(sol, prob)
     return sol;
 }
 
+
 function produceSolution(prob) {
     var sol = generateSolution(prob);
-    sol = _.map(sol, prepareForPrint)
+    sol = _.map(sol, prepareFinalSolution)
     return sol;
 }
 
