@@ -1,6 +1,7 @@
 
 # New features
 
+-     export contenuto and tipo attivita for registro -- [Apr 2nd 16](../../commit/9ce94c7c11c6087da4b60a1da26bee00b266f9d7)
 -     add table -- [Mar 31st 16](../../commit/a071f248ad1a75e6ad2eed9eb37e6c0d4dc23e30)
 -     add tests -- [Mar 31st 16](../../commit/5c42518aaaf71e477bd81dca4d27d399a6d1fc74)
 
