@@ -117,9 +117,9 @@ function prepareForExcel(data) {
     newData.c_forma_didattica = _.get(data, 'c_forma_didattica', 0);
     newData.contenuto = _.get(data, 'contenuto', "NA");
     newData.inizio_ore = parseInt(date.format('HH'));
-    newData.inizio_ore_minuti = parseInt(date.format('mm'));
+    newData.inizio_ore_min = parseInt(date.format('mm'));
     newData.termine_ore = parseInt(datef.format('HH'));
-    newData.termine_ore_minuti = parseInt(datef.format('mm'));
+    newData.termine_ore_min = parseInt(datef.format('mm'));
     newData.n_ore_lez = data.durNum;
     newData.n_ore_lez_min = 0;
     newData = _.assign(newData, docente(data))

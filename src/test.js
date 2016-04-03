@@ -61,7 +61,7 @@ let jsonTest = [{
 describe('#json', () => {
     _.map(jsonTest, (j) => {
         let q = j
-        it(`should ${q.msg} [ ${q.cmd} > ${q.file} ] `, () => {
+        it(`should ${q.msg} [ rm -f ${q.file} && ${q.cmd} > ${q.file} ] `, () => {
             let f = fs.readFileSync(q.file, 'utf8');
             return exec(q.cmd).should.eventually.equal(f);
         })
