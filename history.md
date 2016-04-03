@@ -7,6 +7,7 @@
 
 # Bug fixes
 
+-     update import field names -- [Apr 3rd 16](../../commit/3e0479b934fbe0e3088a1199f2cbca521883a752)
 -     propagate codice aula -- [Apr 2nd 16](../../commit/0cbe5fcc78fc5820e12d0d640ddc104df25941c9)
 -     usage file path -- [Mar 31st 16](../../commit/c51c59d6963fa2846558cd7ed0b5eb9df09305af)
 -     test timeout -- [Mar 31st 16](../../commit/b76a91708cb4f1453eecfa7c4e9e5f8e53d461f0)
