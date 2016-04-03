@@ -4,7 +4,7 @@
   "description": "No name given yet",
   "main": "index.js",
   "bin": {
-    "autoprog": "./index.js"
+    "vz-class-schedule": "./index.js"
   },
   "man": "./man/man1/autoprog.1",
   "scripts": {
