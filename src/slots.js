@@ -180,7 +180,13 @@ function addContent(sol, prob) {
                 if (t.type === 'lezione') {
                     it.c_forma_didattica = 1
                     it.tag = it.tag + ',lezione'
-                } else {
+                } else if(t.type === 'laboratorio') {
+                    it.c_forma_didattica = 13
+                    it.tag = it.tag + ',altro,laboratorio'
+                } else if(t.type === 'esercitazione') {
+                    it.c_forma_didattica = 13
+                    it.tag = it.tag + ',altro,esercitazione'
+                } else if(t.type === 'altro') {
                     it.c_forma_didattica = 13
                     it.tag = it.tag + ',altro'
                 }
