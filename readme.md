@@ -55,6 +55,7 @@ Released under the BSD License.
 
 # Bug fixes
 
+-     differentiate between types of activity -- [Apr 4th 16](../../commit/52c5b88b69c81aea51b0cfb1d311cfd0227fac34)
 -     range overlap and add export option -- [Apr 4th 16](../../commit/67b42cc35b4ed3da2f6b1e8b778033ce07653046)
 -     command name -- [Apr 3rd 16](../../commit/a49dbb78f11c960b8a4d642c62d1b321f333f137)
 -     update import field names -- [Apr 3rd 16](../../commit/3e0479b934fbe0e3088a1199f2cbca521883a752)
