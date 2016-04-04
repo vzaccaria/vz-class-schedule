@@ -1,5 +1,5 @@
 Usage:
-    autoprog schedule PROBLEM [ -g ] [ -x ] [ -j [ -i ] ]
+    autoprog schedule PROBLEM [ -g ] [ -x ] [ -j [ -i | -o ] ]
     autoprog ( -h | --help )
 
 Options:
@@ -8,6 +8,7 @@ Options:
     -x, --xlsx                  generate an excel file of the schedule
     -j, --json                  generate a json file of the schedule
     -i, --import                format as import
+    -o, --export                generate a snippet of json to be filled up with content
 
 Commands:
     schedule                create a schedule from the problem

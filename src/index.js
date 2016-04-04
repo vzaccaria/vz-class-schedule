@@ -10,7 +10,7 @@ let {
 } = require('./lib/xlsx')
 
 let {
-    produceStats, produceSolution, produceNotes
+    produceStats, produceSolution, produceNotes, produceContentTemplate
 } = require('./lib/slots')
 
 
@@ -25,9 +25,10 @@ let getOptions = doc => {
     let xlsx = $o('-x', '--xlsx', false, o)
     let json = $o('-j', '--json', false, o)
     let imprt = $o('-i', '--import', false, o)
+    let output = $o('-o', '--export', false, o)
 
     return {
-        help, problem, program, schedule, googlecal, xlsx, json, imprt
+        help, problem, program, schedule, googlecal, xlsx, json, imprt, output
     }
 }
 
@@ -46,7 +47,7 @@ function produceGoogleCalEntry(it) {
 let main = () => {
     $fs.readFileAsync(__dirname+'/docs/usage.md', 'utf8').then(it => {
         let {
-            help, problem, schedule, googlecal, xlsx, json, imprt
+            help, problem, schedule, googlecal, xlsx, json, imprt, output
         } = getOptions(it);
         if (help) {
             console.log(it)
@@ -72,10 +73,12 @@ let main = () => {
                                     statistics: stats,
                                     notes: notes
                                 }
-                                if(!imprt) {
-                                    console.log(JSON.stringify(all, 0, 4));
-                                } else {
+                                if(output) {
+                                    console.log(JSON.stringify(produceContentTemplate(sol), 0, 4))
+                                } else if (imprt) {
                                     console.log(JSON.stringify(produceJsonForImport(sol, prob), 0, 4));
+                                } else {
+                                    console.log(JSON.stringify(all, 0, 4));
                                 }
                             } else {
                                 console.log(et.print(sol))

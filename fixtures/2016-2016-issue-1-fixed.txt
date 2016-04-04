@@ -1,0 +1,57 @@
+giorno   data              start  end    durata  durNum  aula   c_aula  contenuto  c_forma_didattica  tag                         gDate             gDuration  gAddress                             
+-------  ----------------  -----  -----  ------  ------  -----  ------  ---------  -----------------  --------------------------  ----------------  ---------  -------------------------------------
+Martedì  06 ottobre 2015   13.15  16.15  ***     3       L15    1862               1                  lec,lezione                 10/06/2015 13:15  180        Via La Masa, 34 - 20156 - Milano (MI)
+Venerdì  09 ottobre 2015   08.15  11.15  ***     3       L01    79                 1                  lec,lezione                 10/09/2015 08:15  180        Via La Masa, 34 - 20156 - Milano (MI)
+Venerdì  16 ottobre 2015   08.15  11.15  ***     3       L01    79                 1                  lec,lezione                 10/16/2015 08:15  180        Via La Masa, 34 - 20156 - Milano (MI)
+Martedì  20 ottobre 2015   13.15  16.15  ***     3       L15    1862               1                  lec,lezione                 10/20/2015 13:15  180        Via La Masa, 34 - 20156 - Milano (MI)
+Venerdì  23 ottobre 2015   08.15  10.15  **      2       L01    79                 1                  lec,lezione                 10/23/2015 08:15  120        Via La Masa, 34 - 20156 - Milano (MI)
+Martedì  27 ottobre 2015   12.15  14.15  **      2       B6.27  4699               13                 lab,M,Al,Va,Co,SqC,altro    10/27/2015 12:15  120        Via Durando, 10 - 20158 - Milano (MI)
+Martedì  27 ottobre 2015   14.15  16.15  **      2       L15    1862               1                  lec,lezione                 10/27/2015 14:15  120        Via La Masa, 34 - 20156 - Milano (MI)
+Venerdì  30 ottobre 2015   08.15  11.15  ***     3       L01    79                 1                  lec,lezione                 10/30/2015 08:15  180        Via La Masa, 34 - 20156 - Milano (MI)
+Martedì  03 novembre 2015  10.15  14.15  ****    4       B6.27  4699               13                 lab,M,J,Al,Va,Co,SqC,altro  11/03/2015 10:15  240        Via Durando, 10 - 20158 - Milano (MI)
+Martedì  03 novembre 2015  14.15  16.15  **      2       L15    1862               1                  lec,lezione                 11/03/2015 14:15  120        Via La Masa, 34 - 20156 - Milano (MI)
+Venerdì  06 novembre 2015  08.15  10.15  **      2       L01    79                 1                  lec,lezione                 11/06/2015 08:15  120        Via La Masa, 34 - 20156 - Milano (MI)
+Martedì  10 novembre 2015  13.15  16.15  ***     3       L15    1862               1                  lec,lezione                 11/10/2015 13:15  180        Via La Masa, 34 - 20156 - Milano (MI)
+Martedì  17 novembre 2015  10.15  13.15  ***     3       B6.28  4700               13                 lab,M,J,Fe,SqD,altro        11/17/2015 10:15  180        Via Durando, 10 - 20158 - Milano (MI)
+Martedì  17 novembre 2015  13.15  16.15  ***     3       L15    1862               1                  lec,lezione                 11/17/2015 13:15  180        Via La Masa, 34 - 20156 - Milano (MI)
+Martedì  01 dicembre 2015  13.15  16.15  ***     3       L15    1862               1                  lec,lezione                 12/01/2015 13:15  180        Via La Masa, 34 - 20156 - Milano (MI)
+Venerdì  04 dicembre 2015  08.15  11.15  ***     3       L01    79                 1                  lec,lezione                 12/04/2015 08:15  180        Via La Masa, 34 - 20156 - Milano (MI)
+Venerdì  11 dicembre 2015  08.15  11.15  ***     3       L01    79                 1                  lec,lezione                 12/11/2015 08:15  180        Via La Masa, 34 - 20156 - Milano (MI)
+Martedì  15 dicembre 2015  12.15  14.15  **      2       B6.27  4699               13                 lab,M,J,Al,Co,SqC,altro     12/15/2015 12:15  120        Via Durando, 10 - 20158 - Milano (MI)
+Martedì  15 dicembre 2015  14.15  16.15  **      2       L15    1862               1                  lec,lezione                 12/15/2015 14:15  120        Via La Masa, 34 - 20156 - Milano (MI)
+Martedì  22 dicembre 2015  10.15  12.15  **      2       B6.27  4699               13                 lab,M,J,Al,Va,Co,SqC,altro  12/22/2015 10:15  120        Via Durando, 10 - 20158 - Milano (MI)
+Martedì  22 dicembre 2015  13.15  16.15  ***     3       L15    1862               1                  lec,lezione                 12/22/2015 13:15  180        Via La Masa, 34 - 20156 - Milano (MI)
+Venerdì  08 gennaio 2016   08.15  11.15  ***     3       L01    79                 1                  lec,lezione                 01/08/2016 08:15  180        Via La Masa, 34 - 20156 - Milano (MI)
+Martedì  12 gennaio 2016   10.15  12.15  **      2       B6.28  4700               13                 lab,M,Fe,SqD,altro          01/12/2016 10:15  120        Via Durando, 10 - 20158 - Milano (MI)
+Martedì  12 gennaio 2016   13.15  16.15  ***     3       L15    1862               1                  lec,lezione                 01/12/2016 13:15  180        Via La Masa, 34 - 20156 - Milano (MI)
+Venerdì  15 gennaio 2016   08.15  11.15  ***     3       L01    79                 1                  lec,lezione                 01/15/2016 08:15  180        Via La Masa, 34 - 20156 - Milano (MI)
+Martedì  19 gennaio 2016   13.15  16.15  ***     3       L15    1862               1                  lec,lezione                 01/19/2016 13:15  180        Via La Masa, 34 - 20156 - Milano (MI)
+Venerdì  22 gennaio 2016   08.15  11.15  ***     3       L01    79                 1                  lec,lezione                 01/22/2016 08:15  180        Via La Masa, 34 - 20156 - Milano (MI)
+Martedì  26 gennaio 2016   10.15  13.15  ***     3       B6.28  4700               13                 lab,M,J,Bo,Fe,Ap,SqD,altro  01/26/2016 10:15  180        Via Durando, 10 - 20158 - Milano (MI)
+Martedì  26 gennaio 2016   13.15  16.15  ***     3       L15    1862               1                  lec,lezione                 01/26/2016 13:15  180        Via La Masa, 34 - 20156 - Milano (MI)
+Venerdì  29 gennaio 2016   08.15  11.15  ***     3       L01    79                 1                  lec,lezione                 01/29/2016 08:15  180        Via La Masa, 34 - 20156 - Milano (MI)
+
+tag      total
+-------  -----
+lec      64   
+lab      18   
+lezione  64   
+altro    18   
+M        18   
+J        14   
+Al       10   
+Va       8    
+Co       10   
+Bo       3    
+Fe       8    
+Ap       3    
+SqC      10   
+SqD      8    
+
+giorno      durata  durNum  aula   tag                         note                                                                                
+----------  ------  ------  -----  --------------------------  ------------------------------------------------------------------------------------
+17 11 2015  ***     3       B6.28  lab,M,J,Fe,SqD,altro        Bozzolin e Apruzzese non presenti; Bozzolin ha poi recuperato alla prova in itinere.
+15 12 2015  **      2       B6.27  lab,M,J,Al,Co,SqC,altro     Valenti non presente giustificato. Da recuperare.                                   
+12 01 2016  **      2       B6.28  lab,M,Fe,SqD,altro          Bozzolin non presente, non penso recuperera'. Apruzzese non si e' presentato.       
+26 01 2016  ***     3       B6.28  lab,M,J,Bo,Fe,Ap,SqD,altro  Andrea Continella si e' presentato ma non doveva, ma non si sa chi e'!              
+

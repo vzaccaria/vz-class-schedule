@@ -53,10 +53,20 @@ let jsonTest = [{
     cmd: "./index.js schedule ./fixtures/2015-2016.json -j -i",
     file: './fixtures/2015-2016-solved-import.json'
 }, {
+    msg: "generate valid template for export",
+    cmd: "./index.js schedule ./fixtures/2015-2016.json -j -o",
+    file: './fixtures/2015-2016-solved-export.json'
+}, {
     msg: "generate valid schedule to import with content",
     cmd: "./index.js schedule ./fixtures/2015-2016-tagged.json -j -i",
     file: './fixtures/2015-2016-tagged-solved-import.json'
-}]
+},{
+    msg: "fix issue #1 - univocally determine whether a moment is in a lecture or another (no overlaps)",
+    cmd: "./index.js schedule fixtures/2015-2016-issue-1.json",
+    file: './fixtures/2016-2016-issue-1-fixed.txt'
+
+}
+               ]
 
 describe('#json', () => {
     _.map(jsonTest, (j) => {

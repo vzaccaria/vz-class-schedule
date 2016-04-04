@@ -23,6 +23,7 @@ var _require3 = require("./lib/slots");
 var produceStats = _require3.produceStats;
 var produceSolution = _require3.produceSolution;
 var produceNotes = _require3.produceNotes;
+var produceContentTemplate = _require3.produceContentTemplate;
 
 var getOptions = function (doc) {
     "use strict";
@@ -35,9 +36,10 @@ var getOptions = function (doc) {
     var xlsx = $o("-x", "--xlsx", false, o);
     var json = $o("-j", "--json", false, o);
     var imprt = $o("-i", "--import", false, o);
+    var output = $o("-o", "--export", false, o);
 
     return {
-        help: help, problem: problem, program: program, schedule: schedule, googlecal: googlecal, xlsx: xlsx, json: json, imprt: imprt
+        help: help, problem: problem, program: program, schedule: schedule, googlecal: googlecal, xlsx: xlsx, json: json, imprt: imprt, output: output
     };
 };
 
@@ -63,6 +65,7 @@ var main = function () {
         var xlsx = _getOptions.xlsx;
         var json = _getOptions.json;
         var imprt = _getOptions.imprt;
+        var output = _getOptions.output;
 
         if (help) {
             console.log(it);
@@ -86,10 +89,12 @@ var main = function () {
                                     statistics: stats,
                                     notes: notes
                                 };
-                                if (!imprt) {
-                                    console.log(JSON.stringify(all, 0, 4));
-                                } else {
+                                if (output) {
+                                    console.log(JSON.stringify(produceContentTemplate(sol), 0, 4));
+                                } else if (imprt) {
                                     console.log(JSON.stringify(produceJsonForImport(sol, prob), 0, 4));
+                                } else {
+                                    console.log(JSON.stringify(all, 0, 4));
                                 }
                             } else {
                                 console.log(et.print(sol));

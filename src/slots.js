@@ -171,12 +171,13 @@ function retouchSlots(prob, sol) {
 
 function addContent(sol, prob) {
     sol = _.map(sol, (it) => {
-        let r = $m.range(it.from, it.to)
+        let nd = $m(it.to).subtract(1, "minute")
+        let r = $m.range(it.from, nd)
         _.map(prob.content, (t, k) => {
             let d = $m(k, 'D MMMM YYYY HH:mm')
-            if(r.contains(d)) {
+            if (r.contains(d)) {
                 it.contenuto = t.contenuto
-                if(t.type === 'lezione') {
+                if (t.type === 'lezione') {
                     it.c_forma_didattica = 1
                     it.tag = it.tag + ',lezione'
                 } else {
@@ -215,13 +216,26 @@ function produceSolution(prob) {
 function produceNotes(prob) {
     var sol = generateSolution(prob);
     sol = _.filter(sol, (s) => {
-        if(!_.isUndefined(s.note)) {
+        if (!_.isUndefined(s.note)) {
             return true;
         } else {
             return false;
         }
     })
     return _.map(sol, printNote);
+}
+
+function produceContentTemplate(sol) {
+    let dt = _.groupBy(sol, (i) => {
+        let date = $m(i.gDate, 'MM/DD/YYYY HH:mm')
+        return date.format('D MMMM YYYY HH:mm')
+    })
+    return _.mapValues(dt, (i) => {
+        return {
+            contenuto: "",
+            type: i[0].tag
+        }
+    })
 }
 
 function produceStats(prob, sol) {
@@ -248,4 +262,6 @@ function produceStats(prob, sol) {
 }
 
 
-module.exports = { produceStats, produceSolution, produceNotes }
+module.exports = {
+    produceStats, produceSolution, produceNotes, produceContentTemplate
+}
