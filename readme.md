@@ -12,7 +12,7 @@ npm install autoprog
 
 ```
 Usage:
-    autoprog schedule PROBLEM [ -g ] [ -x ] [ -j [ -i ] ]
+    autoprog schedule PROBLEM [ -g ] [ -x ] [ -j [ -i | -o ] ]
     autoprog ( -h | --help )
 
 Options:
@@ -21,6 +21,7 @@ Options:
     -x, --xlsx                  generate an excel file of the schedule
     -j, --json                  generate a json file of the schedule
     -i, --import                format as import
+    -o, --export                generate a snippet of json to be filled up with content
 
 Commands:
     schedule                create a schedule from the problem
@@ -54,6 +55,7 @@ Released under the BSD License.
 
 # Bug fixes
 
+-     range overlap and add export option -- [Apr 4th 16](../../commit/67b42cc35b4ed3da2f6b1e8b778033ce07653046)
 -     command name -- [Apr 3rd 16](../../commit/a49dbb78f11c960b8a4d642c62d1b321f333f137)
 -     update import field names -- [Apr 3rd 16](../../commit/3e0479b934fbe0e3088a1199f2cbca521883a752)
 -     propagate codice aula -- [Apr 2nd 16](../../commit/0cbe5fcc78fc5820e12d0d640ddc104df25941c9)
