@@ -30,7 +30,7 @@
     "flat": "1.6.1",
     "git-hist": "0.0.5",
     "json2yaml": "1.0.3",
-    "mocha": "2.4.5",
+    "mocha": "3.5.2",
     "moment": "2.11.1",
     "moment-range": "2.2.0",
     "mustache": "2.1.3",
