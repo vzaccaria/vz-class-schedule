@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/vzaccaria/autoprog",
   "dependencies": {
-    "babel": "4.7.16",
+    "babel": "6.23.0",
+    "babel-cli": "6.26.0",
     "chai": "3.5.0",
     "chai-as-promised": "5.2.0",
     "diy-build": "1.0.8",
